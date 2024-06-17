@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item5 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'menu header header header header header header '
+        'menu main main main main main main'
+        'menu footer footer footer footer footer footer';
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 50px 0;
+      font-size: 20px;
+    }
+
+    .continentes{
+            
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            float: center;
+            
+        }
+
+        section{
+        display: table-row;
+        float: left;
+        width: 200px;
+        
+       }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+          <h1>Site de Geografia</h1>
+          
+          <h2>Bem-vindo ao site de Geografia</h2>
+          <h2>Países oficialmente reconhecidos pela ONU: <a href="/Paises/Todos">193</h2></a>
+        </div>
+        <div class="item2">
+          <section>
+          <nav>
+              <ul>
+              <h3>Outros</h3>
+              <a href="/Outro/Economia"><li>Economias</li></a>
+              <li>População</li>
+              <li>Países não reconhecidos</li>
+              </ul>
+          </nav>
+              </section>
+            </div>
+        <div class="item3">
+          <h2 class="titulo_continente">Continentes</h2>
+          <article class="continentes">
+            <table>
+                <tr>
+                    <td style="border-top:5px solid;border-color:#2d2dbe;padding:0.5px 0.25em">
+           <a href="/Paises/Europa"><h3 class="europa">Europa</h3></a>   
+           </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="border-top:5px solid;border-color:#339961;padding:0.5px 0.25em">
+           <a href="/Paises/America"><h3 class="america">América</h3></a>
+                    </td>
+                </tr>
+            </table>
+        <table>
+            <tr>
+                <td style="border-top:5px solid;border-color:#ee3e3e;padding:0.5px 0.25em">
+           <a href="/Paises/Asia"><h3 class="asia">Asia</h3></a>
+           </td>
+        </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="border-top:5px solid;border-color:#993390;padding:0.5px 0.25em">
+           <a href="/Paises/Africa"><h3 class="africa">África</h3></a>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="border-top:5px solid;border-color:#f7f316;padding:0.5px 0.25em">
+           <a href="/Paises/Oceania"><h3 class="oceania">Oceania</h3></a>
+                </td>
+            </tr>
+        </table>
+        </article>
+        </div>  
+        <div class="item5">uncopyrighted</div>
+      </div>
+</body>
+</html>
